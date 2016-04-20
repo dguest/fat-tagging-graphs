@@ -1,7 +1,9 @@
 #### HOW TO DO THINGS! ####
 
-> ./mkbox.sh
-> make
+```
+./mkbox.sh
+make
+```
 
 Yay!
 

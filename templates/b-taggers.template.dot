@@ -1,0 +1,53 @@
+graph [size = "6, 6"]
+jet  [label="Tracks", fontcolor=white, style=filled, fillcolor=black];
+
+subgraph cluster_0{
+	// rank=same
+	label="Primary Vertex"
+	color=COLOR_PRIMARY
+	penwidth=3
+	ip2tag      [label="IP2D"     , style=filled, fillcolor=red]
+	ip3tag      [label="IP3D"     , style=filled, fillcolor=red]
+
+	// rank=same
+	// color=gray
+	// label="dimensional reduction"
+	ip3d    [ label="IP3D"   , style=filled, fillcolor = cyan]
+	ip2d    [ label="IP2D"   , style=filled, fillcolor = cyan]
+	ip2tag -> ip2d [ width=2 ]
+	ip3tag -> ip3d [ width=2 ]
+
+}
+
+subgraph cluster_1 {
+	label="Secondary Vertex"
+	color=COLOR_SECONDARY
+	penwidth=3
+	sv0tag      [label="SV0"       , style=filled, fillcolor=red]
+	sv1tag      [label="SV1"       , style=filled, fillcolor=red]
+}
+jet -> ip2tag
+jet -> ip3tag
+jet -> sv0tag
+jet -> sv1tag
+
+subgraph cluster_2 {
+	label="Multi Vertex"
+	color=COLOR_MULTI
+	penwidth=3
+	jetfitter  [label="JetFitter" , style=filled, fillcolor=red]
+}
+jet -> jetfitter
+
+subgraph cluster_3 {
+	label="MVb Track-based"
+	color=COLOR_MVB
+	penwidth=3
+	mvbcuts [label="Track Counting", style=filled, fillcolor=red]
+	mvbshape [label="Jet Width", style=filled, fillcolor=red]
+	mvb3rd [label="3rd Track sig", style=filled, fillcolor=red]
+}
+jet -> mvbcuts
+jet -> mvbshape
+jet -> mvb3rd
+

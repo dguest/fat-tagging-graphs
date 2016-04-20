@@ -1,0 +1,14 @@
+hbb     [ label="Hbb Tagging NN" , style=filled, fillcolor=purple ]
+times2    [ label="MVx\n(x2 Track Jets)", style=filled, fillcolor=purple]
+
+sv0tag -> times2
+sv1tag -> times2
+ip2d   -> times2
+ip3d   -> times2
+jetfitter -> times2
+
+mvbcuts -> times2
+mvbshape -> times2
+mvb3rd -> times2
+
+times2 -> hbb

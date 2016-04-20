@@ -1,0 +1,13 @@
+
+towers [label="Towers", fontcolor=white, style=filled, fillcolor=black]
+subgraph cluster_4 {
+	label="Calo Substructure"
+	color=COLOR_SUBSTRUCTURE
+	penwidth=3
+	jetimg [label="Jet Image", shape=diamond]
+}
+
+towers -> jetimg
+jetimg -> hbb
+
+

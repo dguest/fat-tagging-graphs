@@ -1,0 +1,17 @@
+jet1  [label="Track Jet 1", fontcolor=white, style=filled, fillcolor=black];
+jet2  [label="Track Jet 2", fontcolor=white, style=filled, fillcolor=black];
+j1alg  [ label="B Tagging", style=filled, fillcolor=red]
+j2alg  [ label="B Tagging", style=filled, fillcolor=red]
+j1tag  [ label="VR Jet Tagger", style=filled, fillcolor=green]
+j2tag  [ label="VR Jet Tagger", style=filled, fillcolor=green]
+
+cuts [ label="Cuts", shape=box]
+
+jet1 -> j1alg -> j1tag -> cuts
+jet2 -> j2alg -> j2tag -> cuts
+
+mass -> cuts
+nsubj -> cuts
+encor -> cuts
+splitting -> cuts
+

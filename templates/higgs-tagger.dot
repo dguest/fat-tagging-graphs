@@ -1,0 +1,16 @@
+hbb     [ label="Hbb" , style=filled, fillcolor=purple ]
+
+sv0tag -> hbb
+sv1tag -> hbb
+ip2d   -> hbb
+ip3d   -> hbb
+jetfitter -> hbb
+
+mvbcuts -> hbb
+mvbshape -> hbb
+mvb3rd -> hbb
+
+
+towers [label="Towers", fontcolor=white, style=filled, fillcolor=black]
+substructure [label="Substructure", style=filled, fillcolor=red]
+towers -> substructure -> hbb

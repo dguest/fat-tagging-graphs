@@ -1,0 +1,10 @@
+hbb     [ label="VR Jet Tagger" , style=filled, fillcolor=green ]
+sv0tag -> hbb
+sv1tag -> hbb
+ip2d   -> hbb
+ip3d   -> hbb
+jetfitter -> hbb
+
+mvbcuts -> hbb
+mvbshape -> hbb
+mvb3rd -> hbb

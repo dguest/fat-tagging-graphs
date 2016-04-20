@@ -1,0 +1,18 @@
+mv2     [ label="MV2" , style=filled, fillcolor=purple ]
+//mvb     [ label="MVb" , style=filled, fillcolor=purple ]
+
+sv0tag -> mv2
+sv1tag -> mv2
+ip2d   -> mv2
+ip3d   -> mv2
+jetfitter -> mv2
+
+
+mvb [ label="MVb", style=filled, fillcolor=purple]
+mvbcuts -> mvb
+mvbshape -> mvb
+mvb3rd -> mvb
+sv1tag -> mvb
+jetfitter -> mvb
+ip3d -> mvb
+ip2d -> mvb

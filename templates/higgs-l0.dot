@@ -1,0 +1,18 @@
+
+towers [label="Towers", fontcolor=white, style=filled, fillcolor=black]
+subgraph cluster_4 {
+	label="Calo Substructure"
+	color=COLOR_SUBSTRUCTURE
+	penwidth=3
+	nsubj [label="n-subjetiness", style=filled, fillcolor=red]
+	encor [label="C2, D2", style=filled, fillcolor=red]
+	splitting [label="others...", style=filled, fillcolor=red]
+}
+
+towers -> nsubj
+towers -> encor
+towers -> splitting
+nsubj -> hbb
+encor -> hbb
+splitting -> hbb
+

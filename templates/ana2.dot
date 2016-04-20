@@ -1,0 +1,13 @@
+jet1  [label="Fat Jet Tracks", fontcolor=white, style=filled, fillcolor=black]
+jalg  [ label="Multi SV tagging", style=filled, fillcolor=red]
+jtag  [ label="Fat Jet Tagger", style=filled, fillcolor=green]
+
+// cuts [ label="Cuts", shape=box]
+
+jet1 -> jalg -> jtag
+
+mass -> jtag
+nsubj -> jtag
+encor -> jtag
+splitting -> jtag
+
